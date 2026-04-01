@@ -9,7 +9,7 @@ int i = 0;
 
     while (i <= N ) {
         cout << i << endl;
-        i = i  + 1;
+        i++;
     }
 return 0;
 }

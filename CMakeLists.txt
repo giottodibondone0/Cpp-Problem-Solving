@@ -35,4 +35,9 @@ add_executable(cpp_project main.cpp
         nestedloops.cpp
         whileloop.cpp
         task26.cpp
+        "Tasks/task 27.cpp"
+        Tasks/task28.cpp
+        Tasks/task29.cpp
+        Tasks/task37.cpp
+        Tasks/task50.cpp
 )
