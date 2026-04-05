@@ -40,4 +40,24 @@ add_executable(cpp_project main.cpp
         Tasks/task29.cpp
         Tasks/task37.cpp
         Tasks/task50.cpp
+        coffeeshop.cpp
+        Tasks/task1&2.cpp
+        Tasks/task3.cpp
+        Tasks/task8.cpp
+        Tasks/task9&10&11.cpp
+        Tasks/task9&10&11.cpp
+        comparision.cpp
+        comparision.cpp
+        comparision.cpp
+        comparision.cpp
+        Tasks/task24&25.cpp
+        Tasks/task24&25.cpp
+        Tasks/task24&25.cpp
+        Tasks/task24&25.cpp
+        Tasks/task24&25.cpp
+        Tasks/task36.cpp
 )
+add_executable(new_target comparision.cpp
+        Tasks/task24&25.cpp
+        Tasks/task24&25.cpp)
+add_executable(new_target1 Tasks/task24&25.cpp)

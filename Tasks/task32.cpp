@@ -1,13 +1,43 @@
 #include <iostream>
-#include <string>
-#include <cmath>
+
 using namespace std;
 
-int main() {
 
-    cout << " Enter  2 nums ";
-    int num, M;
-    cin >> num >> M;
-    cout << pow(num, M) << endl;
+struct stUserNumbers {
+    int Base = {};
+    int pow = {};
+};
+
+stUserNumbers &GetNumbers(stUserNumbers &UserNumbers) {
+
+    cout << "Enter the base ";
+    cin >> UserNumbers.Base;
+    cout << "Enter the power ";
+    cin >> UserNumbers.pow;
+    return UserNumbers;
+}
+
+int BasePow(stUserNumbers &UserNumbers) {
+    if (UserNumbers.pow == 0) {
+        return 1;
+    }
+
+   int result = 1;
+        for (int i = 0; i < UserNumbers.pow; i++ ) {
+            result *= UserNumbers.Base;
+        }
+
+    return result;
+}
+
+void PrintResult (int result ) {
+    cout << "the result is : " << result;
+
+}
+
+int main() {
+    stUserNumbers UserNumbers;
+PrintResult(BasePow(GetNumbers(UserNumbers)));
+
     return 0;
 }
