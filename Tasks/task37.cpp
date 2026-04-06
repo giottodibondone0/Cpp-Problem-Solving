@@ -2,19 +2,25 @@
 #include <string>
 using namespace std;
 
-int main() {
-    int N;
-    int sum = 0;
-    int num = {0};
-    cin >> N;
+float GetNumbers() {
+float EnteredNumbers;
+float Result ={};
+    cout << "Enter the numbers : ";
+    cin >>EnteredNumbers;
+    while (EnteredNumbers != -99) {
 
-    while (N != -99 ) {
-
-        sum = sum+N;
-        cin >> N;
-
-
+        Result = Result + EnteredNumbers;
+        cin >> EnteredNumbers;
     }
-    cout << sum;
+    return Result;
+}
+void PrintResult (float Result) {
+    cout << Result;
+}
+
+
+
+int main() {
+    PrintResult(GetNumbers());
     return 0;
 }
