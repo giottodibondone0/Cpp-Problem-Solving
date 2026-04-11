@@ -7,21 +7,25 @@ int GetUserNumber() {
     cin >> Num;
     return  Num;
 }
-void PrintDigitsReversed(int UserNumber) {
+int SumDigits(int UserNumber) {
 
-
+    int sum = 0;
     while (UserNumber!=0){
         int number = (UserNumber%10);
-        cout << number <<endl;
+
+        sum = sum + number;
         UserNumber = UserNumber/10;
     }
 
-
+    return sum;
+}
+void PrintResult(int Sum) {
+    cout << "the sum of the digits is : " << Sum;
 }
 
 
 int main() {
 
-    PrintDigitsReversed(GetUserNumber());
+    PrintResult(SumDigits(GetUserNumber()));
     return 0;
 }
