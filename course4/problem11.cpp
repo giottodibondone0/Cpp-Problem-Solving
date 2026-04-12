@@ -19,21 +19,21 @@ int ReverseNumber(int UserNumber) {
     }
     return Reversed;
 }
+bool CheckPalindrome(int UserNumber, int Reversed) {
+    return (UserNumber == Reversed);
+}
 
-void PrintDigitsReversed(int UserNumber) {
-
-
-    while (UserNumber!=0){
-        int number = (UserNumber%10);
-        cout << number <<endl;
-        UserNumber = UserNumber/10;
+void PrintResult(bool isPalindrome) {
+    if (isPalindrome) {
+        cout << " Yes  it is a palindrome number";
     }
-
-
+    else cout << "No it is not a palindrome number ";
 }
 
 
+
 int main () {
-PrintDigitsReversed(ReverseNumber(GetUserNumber()));
+    int UserNum= GetUserNumber();
+    PrintResult(CheckPalindrome(UserNum,ReverseNumber(UserNum)));
     return 0;
 }
