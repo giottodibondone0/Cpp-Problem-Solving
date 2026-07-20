@@ -93,6 +93,6 @@ stItem CustomerOrder[MAX_ITEMS];
         cout << i + 1 <<". " <<  CustomerOrder[i].Name <<  " \t " << CustomerOrder[i].price << "$" << endl;
         TotalPrice = TotalPrice + CustomerOrder[i].price;
     }
-        cout << " Total Price = " << TotalPrice << endl;
+        cout << " Total Price = " << TotalPrice << "$"<< endl;
     return 0;
 }
